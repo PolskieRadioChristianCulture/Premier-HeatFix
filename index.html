@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Premier HeatFix | Professional Gas, Plumbing & Electrical</title>
+    <meta name="description" content="Professional residential maintenance and emergency services by Premier HeatFix. Expert Gas, Heating, Plumbing, and Electrical solutions by Mariusz.">
+    
+    <!-- Favicon and Brand Icons -->
+    <link rel="icon" type="image/png" href="https://drive.google.com/uc?export=view&id=1PR_QnsJ12Ecg2urZYMEs-ddNZq3q70us">
+    <link rel="shortcut icon" href="https://drive.google.com/uc?export=view&id=1PR_QnsJ12Ecg2urZYMEs-ddNZq3q70us">
+    <link rel="apple-touch-icon" href="https://drive.google.com/uc?export=view&id=1PR_QnsJ12Ecg2urZYMEs-ddNZq3q70us">
+
+    <!-- Open Graph / Social Media Recognition -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Premier HeatFix | Professional Gas, Plumbing & Electrical">
+    <meta property="og:description" content="Trusted local trade experts. Professional Gas Safe installations and emergency repairs.">
+    <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1PR_QnsJ12Ecg2urZYMEs-ddNZq3q70us">
+
+    <!-- JSON-LD Schema for Google (Explicitly telling Google about the logo) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Premier HeatFix",
+      "alternateName": "Premier Heat Fix",
+      "url": "https://premierheatfix.com/",
+      "logo": "https://drive.google.com/uc?export=view&id=1PR_QnsJ12Ecg2urZYMEs-ddNZq3q70us",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+447800800678",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Polish"]
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Arvo:wght@700&display=swap');
+        :root{--accent-yellow:#FDE047;--primary-blue:#1D4ED8;--premium-bg:#020617}
+        body{font-family:'Inter',sans-serif;background-color:var(--premium-bg);color:#fff;overflow-x:hidden}
+        .font-heading{font-family:'Playfair Display',serif}
+        .font-arvo{font-family:'Arvo',serif} 
+        .yellow-gradient{background:linear-gradient(135deg,#FACC15,#FDE047,#EAB308)}
+        
+        /* DARKER METALLIC GOLD BUTTON EFFECT */
+        .gold-button-gradient{
+          background: linear-gradient(
+            180deg,
+            #FFF3A0 0%,
+            #EAB308 35%,
+            #854D0E 75%,
+            #422006 100%
+          );
+          border: 2px solid #FFECB3; 
+          color: white;
+          text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+          box-shadow: 
+            0 12px 25px -5px rgba(0, 0, 0, 0.6),
+            inset 0 2px 0 0 rgba(255, 255, 255, 0.3),
+            inset 0 -2px 5px rgba(0,0,0,0.3);
+          transition: all 0.3s ease;
+        }
+        .gold-button-gradient:hover {
+          filter: brightness(1.1);
+          box-shadow: 0 15px 30px -5px rgba(250, 204, 21, 0.3);
+        }
+        
+        .yellow-text-gradient{background:linear-gradient(135deg,#FDE047,#FACC15,#EAB308);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        .cyan-text-gradient{background:linear-gradient(135deg,#22D3EE,#06B6D4,#0891B2);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+        
+        .text-shadow-premium { text-shadow: 0 2px 12px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.5); }
+        .hero-title-shadow { filter: drop-shadow(0 4px 12px rgba(0,0,0,0.9)) drop-shadow(0 15px 40px rgba(0,0,0,1)); }
+        
+        @keyframes sceneBreathing {
+            0% { transform: scale(1.0); filter: brightness(0.9) contrast(1); }
+            50% { transform: scale(1.1); filter: brightness(1.1) contrast(1.05); }
+            100% { transform: scale(1.0); filter: brightness(0.9) contrast(1); }
+        }
+
+        @keyframes heroPanZoom {
+            0% { transform: scale(1.0) translate(0, 0); filter: brightness(0.85); }
+            25% { transform: scale(1.1) translate(-1%, 1%); filter: brightness(1.05); }
+            50% { transform: scale(1.15) translate(1%, -1%); filter: brightness(1.1); }
+            75% { transform: scale(1.1) translate(1%, 1%); filter: brightness(1.05); }
+            100% { transform: scale(1.0) translate(0, 0); filter: brightness(0.85); }
+        }
+
+        @keyframes lightSweep {
+            0% { opacity: 0.2; background-position: -200% 0; }
+            50% { opacity: 0.4; background-position: 200% 0; }
+            100% { opacity: 0.2; background-position: -200% 0; }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.5; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.2); }
+        }
+
+        .animate-scene {
+            animation: sceneBreathing 40s ease-in-out infinite;
+        }
+
+        .animate-hero-dynamic {
+            animation: heroPanZoom 25s ease-in-out infinite;
+            transform-origin: center center;
+        }
+
+        .light-overlay {
+            background: linear-gradient(115deg, transparent 40%, rgba(59,130,246,0.15) 50%, transparent 60%);
+            background-size: 200% 100%;
+            animation: lightSweep 25s linear infinite;
+            pointer-events: none;
+        }
+
+        .pronounced-center-overlay {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: linear-gradient(to bottom, rgba(30, 58, 138, 0.7) 0%, transparent 35%, transparent 65%, rgba(30, 58, 138, 0.7) 100%),
+                        radial-gradient(circle at center, rgba(37, 99, 235, 0.1) 0%, rgba(2, 6, 23, 0.5) 50%, rgba(2, 6, 23, 0.95) 100%);
+        }
+
+        .blue-focal-glow {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.7) 0%, transparent 70%);
+            filter: blur(35px);
+            pointer-events: none;
+            z-index: 5;
+            animation: pulseGlow 6s ease-in-out infinite;
+        }
+
+        .text-yellow-accent{color:var(--accent-yellow)}
+        
+        .bg-scene-container {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            background-color: #020617;
+        }
+        
+        .bg-scene-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 1 !important;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-[#020617] text-white">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
